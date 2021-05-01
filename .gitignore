@@ -1,2 +1,5 @@
 *.pdf
 *.exe
+*.log
+*.vscode
+*.txt
