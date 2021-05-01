@@ -72,9 +72,17 @@ int main(){
     // iterate over string
     for(int i=0; i<s.length(); i++) cout << s[i];
 
+    cout << endl << "------------using iterator" << endl;
     // iterators
+    // .begin() points to the first el and .end() points to next reigster than the last one
+    // .begin and .end will return the poitners so we need * to get the value
+    // instead of auto we can do string::iterator
+    for(auto it=s.begin(); it!=s.end(); it++) cout << (*it);
     
-
+    cout << endl << "-----------using forEach" << endl;
+    // using for each
+    for(auto c: s) cout << c;
+    cout << endl;
 
     return 0;
 }
