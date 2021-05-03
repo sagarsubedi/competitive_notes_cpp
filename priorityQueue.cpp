@@ -37,7 +37,7 @@ int main(){
     // push and pop is log(n) and top is O(1)
     // default priority is max_heap()
 
-    // priority_queue <int> pq; this is max_heap()
+    // priority_queue<int> pq; // this is max_heap()
     priority_queue < int, vector<int>, greater<int> > pq; // will reverse the priority
     for(int i=1; i<=5; i++) pq.push(i); 
 
